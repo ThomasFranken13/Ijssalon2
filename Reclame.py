@@ -13,10 +13,11 @@ e = 205
 f = 90
 g = 345
 
-def inkomsten_totaal(inkomsten):
+def inkomsten_totaal(inkomsten, BTW):
     inkomsten = a + b + c + d + e + f + g
-    print(inkomsten)
+    BTW_2 = inkomsten * BTW
+    print(f"het totaal van alle inkomsten van deze week is {inkomsten} euro, waarover {BTW_2} euro btw betaald dient te worden.")
     
-inkomsten_totaal(0)
+inkomsten_totaal(0, 0.09)
 
 
